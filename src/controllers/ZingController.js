@@ -96,12 +96,6 @@ class ZingController {
     }
 
     // 14. Search
-    search(req, res) {
-        zing.search(req.query.keyword).then((data) => {
-            res.json(data)
-        })
-    }
-
     searchAll(req, res) {
         zing.search_all(req.query.keyword).then((data) => {
             res.json(data)
@@ -110,6 +104,12 @@ class ZingController {
 
     searchByType(req, res) {
         zing.search_by_type(req.query.keyword, req.query.type).then((data) => {
+            res.json(data)
+        })
+    }
+
+    getRecommendKeyword(req, res) {
+        zing.get_recommend_keyword().then((data) => {
             res.json(data)
         })
     }

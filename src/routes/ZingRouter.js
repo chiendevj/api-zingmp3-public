@@ -43,9 +43,9 @@ router.get("/artist", ZingController.getArtist)
 router.get("/lyric", ZingController.getSongLyric)
 
 // search
-router.get("/search", ZingController.search)
-router.get("/search-all", ZingController.searchAll)
+router.get("/search", ZingController.searchAll)
 router.get("/search-by-type", ZingController.searchByType)
+router.get("/recommend_keyword", ZingController.getRecommendKeyword)
 
 
 // getListMV
